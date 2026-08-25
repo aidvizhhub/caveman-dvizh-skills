@@ -11,9 +11,8 @@ skills:
   - en
   description: 'СОВЕТНИК: после дела — 3-4 варианта, куда можно пойти дальше: улучшение текущего, новая возможность/креатив, скрытое/риск (премортем-взгляд), что сделала бы индустрия. Сначала расходись
     (дивергенция, без суда — Гилфорд/ MIT «diverge before converge»), потом сходись: 1 рекомендация «я бы взял…». Формат консультанта COR: контекст → варианты с ценой (стоимость/выгода) → рекомендация.
-    Правила: 3-4 максимум, по делу, не фантазии; рекомендация одна; юзер сказал «стоп» — не предлагай. Триггеры: варианты, предложи, куда дальше, креатив, идеи, улучши, что ещё, посоветуй, скрытое, риски,
-    премортем, возможности, рекомендация. EN: Advisor: after any task — 3-4 next-step options with cost/benefit, then ONE firm recommendation (COR format). Use when asked for ideas, options, "what''s next",
-    recommendations.'
+    Правила: 3-4 максимум, по делу, не фантазии; рекомендация одна; юзер сказал «стоп» — не предлагай. Триггеры: варианты, предложи, куда дальше, креатив, идеи, улучши, что ещё, посоветуй, скрытое,,возможности,
+    рекомендация. EN: Advisor: after any task — 3-4 next-step options with cost/benefit, then ONE firm recommendation (COR format). Use when asked for ideas, options, "what''s next", recommendations.'
 - name: caveman-cheat
   path: skills/caveman-cheat
   version: 1.3.0
@@ -115,8 +114,8 @@ skills:
   description: 'ПРЕВЕНТИВ И СТРАЖ: видь грабли и скрытые беды ЗАРАНЕЕ, чини до ошибки, не делай медленно то, что можно быстрее. До дела — премортем (представь, что уже провалилось → работай назад, Кляйн/Канеман:
     +30% рисков, снимает оптимизм). FMEA-взгляд: как может сломаться? что будет? как поймать ДО? RPN = серьёзность × частота × обнаружимость. Видишь сломанное/медленное — чини превентивно (мелкое сам, крупное
     — спроси). Shift-left: тестируй рано, вдвое дешевле. Узкие места ищи до, не после. Триггеры: превентивно, превентив, заранее, грабли, скрытый баг, предотврати, не допустить, премортем, fmea, риски,
-    предусмотри, видны проблемы, чини до, быстрее можно, оптимизируй заранее, страж. EN: Prevent: pre-mortem, FMEA, fix issues before they break, test early (shift-left), monitor. Use when asked about risks,
-    foresight, avoiding bugs, what could go wrong.'
+    предусмотри, видны проблемы, чини до, оптимизируй заранее, страж. EN: Prevent: pre-mortem, FMEA, fix issues before they break, test early (shift-left), monitor. Use when asked about risks, foresight,
+    avoiding bugs, what could go wrong.'
 - name: caveman-research
   path: skills/caveman-research
   version: 1.3.0
@@ -136,8 +135,8 @@ skills:
   - ru
   - en
   description: 'ЗАПУСК И ДОЛГИЕ ПРОЦЕССЫ: операционные законы (поллинг запрещён, фон + маркер _DONE.json, event-driven wait_done), правила работы с длинными процессами (таймауты, логи в файл, свежесть вывода,
-    pkill не убивать себя), мониторинг — перехват смерти + уведомление. Триггеры: фоновый, поллинг, sleep, маркер, done.json, wait_done, завис, перехват смерти, сторож, таймаут. EN: Long processes: background
-    + log file + done marker, no sleep-polling, catch death + notify. Use for background jobs, timeouts, watchdogs, waiting for completion.'
+    pkill не убивать себя), мониторинг — перехват смерти + уведомление. Триггеры: фоновый, поллинг, sleep, маркер, done.json, wait_done,перехват смерти, сторож, таймаут. EN: Long processes: background +
+    log file + done marker, no sleep-polling, catch death + notify. Use for background jobs, timeouts, watchdogs, waiting for completion.'
 - name: caveman-save
   path: skills/caveman-save
   version: 1.3.0
@@ -146,9 +145,9 @@ skills:
   - ru
   - en
   description: 'ЭКОНОМИЯ И ФОРМА: батч всё, один вызов = одно дело, скрипты в /tmp вместо цепочек, сжимай вывод (tail/grep/head), дедуп, скрипт лучше правила. Файлы 100-300 строк (max 500), функция 10-25
-    строк. ОДИН ИНСТАНС = одно племя (бить всю семью процессов). ТЕСТ ДО ДОБАВЛЕНИЯ: сначала докажи — потом пиши. Триггеры: экономия, батч, токены, сжать, скрипт, дубликат, два инстанса, тест, файлы, строки,
-    дедуп, шаги до результата, эффективность, рамки успеха, критерии успеха, готово =. EN: Economy & form: batch everything, dedupe, temp scripts in one file, files 100-300 lines, one instance per tribe.
-    Use when asked to save calls/tokens, compress output, streamline.'
+    строк. ОДИН ИНСТАНС = одно племя (бить всю семью процессов). ТЕСТ ДО ДОБАВЛЕНИЯ: сначала докажи — потом пиши. Триггеры: экономия, батч, токены, сжать, скрипт, дубликат,тест, файлы, строки, дедуп, шаги
+    до результата, эффективность, рамки успеха, критерии успеха, готово =. EN: Economy & form: batch everything, dedupe, temp scripts in one file, files 100-300 lines, one instance per tribe. Use when asked
+    to save calls/tokens, compress output, streamline.'
 - name: caveman-style
   path: skills/caveman-style
   version: 1.3.0
@@ -169,8 +168,8 @@ skills:
   description: 'ОБУЧЕНИЕ: объясняй исходя из моего понимания. Строй модель моего уровня (mental models, NN/g) — начни с простого, конкретика → абстракция. Связи явно (intuitive theories): «связано с …,
     потому что …», причинные цепочки. ПОЧЕМУ всегда (1 строка). Предвидь, где я запутаюсь (anticipating confusion + contrast sets): «может показаться, что …, но на деле …». ДО/ПОСЛЕ: покажи, что было до
     и стало после (размеры/скорость/состояние). Интуитивно и кратко как в чате: короткие фразы, примеры, одна мысль = одно предложение, без жаргона. Проверка понимания в конце: «так?». Триггеры: обучи,
-    объясни, научи, понятно, непонятно, запутал, почему так, связи, как это связано, что было до, что стало, расскажи проще, for dummies, объясни на пальцах. EN: Teach at my level: WHY (1 line), explicit
-    links, before/after states, anticipate confusion, end with "так?". Use when asked to explain simply, teach, clarify.'
+    объясни, научи, понятно, непонятно, запутал, почему так,как это связано, что было до, что стало, расскажи проще, for dummies, объясни на пальцах. EN: Teach at my level: WHY (1 line), explicit links,
+    before/after states, anticipate confusion, end with "так?". Use when asked to explain simply, teach, clarify.'
 - name: caveman-think
   path: skills/caveman-think
   version: 1.3.0
@@ -191,5 +190,5 @@ skills:
   - en
   description: 'ДОТОШНО И НЕ-ПОВТОР: в процессе постоянно проверяй каждую мелочь — снимай ФАКТ состояния (как есть), сверяй с «как должно» (доки/план/канон), расхождение = чинить до следующего шага. Отслеживай
     пути и связи (кто читает/пишет/держит, process tree, порты). Отмена/перезапуск — безопасно: бэкап ДО, идемпотентно, семью убить и один новый. Беда → постмортем (5 Почему) → вшить фикс, чтобы НЕ повторилось
-    (RCA, blameless). Триггеры: проверь, дотошно, мелочь, как есть, как должно, состояние, пути, связи, отмена, перезапуск, откат, повторить, постмортем, корень проблемы, 5 почему, рка, не повторил, баг
-    вернулся. EN: Verify everything: take actual state, compare with "should be", fix before next step, safe rollback, postmortem. Use when told to check, confirm, be thorough, prevent repeats.'
+    (RCA, blameless). Триггеры: проверь, дотошно, мелочь, как есть, как должно, состояние, пути, связи, отмена,,повторить, постмортем, корень проблемы, 5 почему, рка, не повторил, баг вернулся. EN: Verify
+    everything: take actual state, compare with "should be", fix before next step, safe rollback, postmortem. Use when told to check, confirm, be thorough, prevent repeats.'
