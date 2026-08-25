@@ -4,7 +4,7 @@
 One skill set, any harness. Based on the open [Agent Skills](https://agentskills.io/specification) format.
 
 [![Skills](https://img.shields.io/badge/skills-17-orange)](#каталог-скиллов)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](#releases)
+[![Version](https://img.shields.io/badge/version-1.1.0-blue)](#releases)
 [![Languages](https://img.shields.io/badge/languages-RU+EN-yellow)](#каталог-скиллов)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-blue)](https://agentskills.io/specification)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -26,7 +26,7 @@ One skill set, any harness. Based on the open [Agent Skills](https://agentskills
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `~/.gemini/skills/` | ✅ |
 | GitHub Copilot / любой агент | `~/.agents/skills/` | ✅ |
 
-> Скиллы — двуязычные: `description` на русском + строка `EN: ...` (в metadata `languages: ru,en`), поэтому включаются и русскими словами («бро», «ресёрч», «не работает»), и английскими. Каждый скилл помечен `version: "1.0.0"`, история — в [RELEASES.md](RELEASES.md).
+> Скиллы — двуязычные: `description` на русском + строка `EN: ...` (в metadata `languages: ru,en`), тело на русском, а его полный английский перевод — в `references/EN.md` каждого скилла (указатель есть в начале SKILL.md). Поэтому скиллы включаются и русскими словами («бро», «ресёрч», «не работает»), и английскими. Каждый скилл помечен `version`, история — в [RELEASES.md](RELEASES.md), версия поднимается через `./bump.sh minor`.
 
 ---
 
@@ -123,12 +123,16 @@ python3 -m venv ~/.venvs/camoufox-research
 
 ## Релизы
 
-История версий — в [RELEASES.md](RELEASES.md) (формат Keep a Changelog, версии SemVer). Версия каждого скилла — в его metadata (`version`).
+История версий — в [RELEASES.md](RELEASES.md) (формат Keep a Changelog, версии SemVer). Версия каждого скилла — в его metadata (`version`). Поднять версию и записать релиз одним вызовом:
+
+```bash
+./bump.sh minor -m "что нового"   # major | minor | patch, по умолчанию patch
+```
 
 ## Проверка и CI
 
-- `./validate.sh` — локальная проверка всех скиллов: frontmatter, имя=папка, длина description, отсутствие трейсов конкретной машины.
-- `.github/workflows/ci.yml` — на каждый push: валидация + [gitleaks](https://github.com/gitleaks/gitleaks) (проверка секретов).
+- `./validate.sh` — локальная проверка всех скиллов: frontmatter, имя=папка, длина description, EN-перевод, отсутствие трейсов конкретной машины.
+- `.github/workflows/ci.yml` — на каждый push: валидация → тест установки (чистый контейнер: 17 скиллов встают и убираются) → [gitleaks](https://github.com/gitleaks/gitleaks).
 
 ## Лицензия
 

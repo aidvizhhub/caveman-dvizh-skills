@@ -16,11 +16,13 @@ license: MIT
   EN: Teach at my level: WHY (1 line), explicit links, before/after states, anticipate confusion, end with "так?". Use when asked to explain simply, teach, clarify.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-teach (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).
@@ -96,12 +98,3 @@ Educator — конкретика сначала, абстракция пото�
 - Коротко, как в чате, без жаргона? · «Так?» в конце?
 
 Нет хотя бы одного — объясни понятнее, не отчитывайся.
-
----
-
-Relative paths in this skill (e.g., scripts/, reference/) are relative to this base directory.
-Note: file list is sampled.
-
-<skill_files>
-</skill_files>
-</content>

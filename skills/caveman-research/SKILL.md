@@ -6,11 +6,13 @@ license: MIT
   EN: Research: 10+ sources first (mandatory), official docs before blogs, verify facts, grade 🟢🟡🔴. Use when fact-checking, ambiguous questions, "how does industry do it".
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-research (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).

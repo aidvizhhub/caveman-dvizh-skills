@@ -1,9 +1,20 @@
 # RELEASES
 
+## [Unreleased]
+
 Формат — [Keep a Changelog](https://keepachangelog.com/ru/1.0.0/), версии — [SemVer](https://semver.org/lang/ru/).
 (Индустрия чаще называет файл `CHANGELOG.md`; у нас имя `RELEASES.md` — как заказано.)
 
-## [Unreleased]
+## [1.1.0] - 2026-08-25
+
+### Added
+- Полные EN-переводы тел: `references/EN.md` (17/17), в каждой SKILL.md — указатель на перевод.
+- `bump.sh` — поднять версию скиллов + записать в RELEASES.md одним вызовом.
+- CI: `install-test` — установка во все харнесы в чистом контейнере (17 скиллов → status → uninstall).
+
+### Changed
+- Версия 1.0.0 → 1.1.0 во всех 17 скиллах (metadata).
+- Вычищен служебный хвост opencode (`<skill_files>` и т.п.) из SKILL.md и EN.md.
 
 ## [1.0.0] - 2026-08-25
 

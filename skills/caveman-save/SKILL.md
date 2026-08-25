@@ -6,11 +6,13 @@ license: MIT
   EN: Economy & form: batch everything, dedupe, temp scripts in one file, files 100-300 lines, one instance per tribe. Use when asked to save calls/tokens, compress output, streamline.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-save (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).

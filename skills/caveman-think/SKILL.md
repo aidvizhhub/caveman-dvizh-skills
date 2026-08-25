@@ -6,11 +6,13 @@ license: MIT
   EN: Thinking with backtracking: Tree-of-Thoughts, audit by 3 criteria, rollback and retry; truth = facts, not feelings. Use when a problem is hard, uncertain, or stuck.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-think (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).

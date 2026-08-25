@@ -6,11 +6,13 @@ license: MIT
   EN: Long processes: background + log file + done marker, no sleep-polling, catch death + notify. Use for background jobs, timeouts, watchdogs, waiting for completion.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-run (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).

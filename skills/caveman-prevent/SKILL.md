@@ -15,11 +15,13 @@ license: MIT
   EN: Prevent: pre-mortem, FMEA, fix issues before they break, test early (shift-left), monitor. Use when asked about risks, foresight, avoiding bugs, what could go wrong.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-prevent (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).
@@ -121,12 +123,3 @@ fastercapital) — узкие места ищи ДО, не после («не д
 дело дотошно (verify) → докажи (доки/тест/железо) → отчёт (СУТЬ→ВЫВОД→где) →
 запись в память + «а дальше?». Не доказал — итерация 2; кап 3 → стоп и
 честный отчёт юзеру. Скилл caveman-loop. Полный текст — канон.
-
----
-
-Relative paths in this skill (e.g., scripts/, reference/) are relative to this base directory.
-Note: file list is sampled.
-
-<skill_files>
-</skill_files>
-</content>

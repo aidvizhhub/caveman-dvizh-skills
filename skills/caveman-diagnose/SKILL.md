@@ -6,11 +6,13 @@ license: MIT
   EN: Fix without guessing: local clues (logs/dmesg/state) → web by clues → treat, one variable at a time. Use when something is broken, hangs, or fails.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-diagnose (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).

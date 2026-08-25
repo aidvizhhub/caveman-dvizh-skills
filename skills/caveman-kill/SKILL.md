@@ -15,11 +15,13 @@ license: MIT
   EN: Safe process hunting: never bare pkill -f (it matches itself), bracket trick, SIGTERM first, verify empty after. Use when killing, restarting, stuck processes.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-kill (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).
@@ -125,12 +127,3 @@ linuxvox bracket trick; U&L 124127 — kill -TERM -PGID бить группу, �
 запутаюсь — закрой сам («может показаться, что …, но на деле …»), покажи
 ДО → ПОСЛЕ (размеры/скорость), коротко как в чате, без жаргона, в конце
 «так?». Мини-урок после дела. Скилл caveman-teach. Полный текст — канон.
-
----
-
-Relative paths in this skill (e.g., scripts/, reference/) are relative to this base directory.
-Note: file list is sampled.
-
-<skill_files>
-</skill_files>
-</content>

@@ -6,11 +6,13 @@ license: MIT
   EN: Machine & video: autostart (systemd/launchd/schtasks), OBS FPS, Linux gaming (Wine/Proton/Lutris), video editing, NVENC/GPU. Use for autostart, OBS, ffmpeg, transcoding, games on Linux.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-desktop (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).

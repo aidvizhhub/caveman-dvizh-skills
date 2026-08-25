@@ -6,11 +6,13 @@ license: MIT
   EN: Caveman style: БРО+🗿, fire/stone imagery, 2-4 short lines, no water; user's wish is law. Use when asked to speak or behave like the cave tribe.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-style (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).

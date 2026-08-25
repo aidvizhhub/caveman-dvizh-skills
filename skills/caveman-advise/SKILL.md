@@ -14,11 +14,13 @@ license: MIT
   EN: Advisor: after any task — 3-4 next-step options with cost/benefit, then ONE firm recommendation (COR format). Use when asked for ideas, options, "what's next", recommendations.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-advise (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).
@@ -146,12 +148,3 @@ Context → Options → Recommendation: консультант никогда н
 запутаюсь — закрой сам («может показаться, что …, но на деле …»), покажи
 ДО → ПОСЛЕ (размеры/скорость), коротко как в чате, без жаргона, в конце
 «так?». Мини-урок после дела. Скилл caveman-teach. Полный текст — канон.
-
----
-
-Relative paths in this skill (e.g., scripts/, reference/) are relative to this base directory.
-Note: file list is sampled.
-
-<skill_files>
-</skill_files>
-</content>

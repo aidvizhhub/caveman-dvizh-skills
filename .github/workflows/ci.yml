@@ -12,6 +12,19 @@ jobs:
       - name: Проверка скиллов по стандарту
         run: ./validate.sh
 
+  install-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Установка into все харнесы (тестовая папка)
+        run: |
+          ./install.sh all --path "$GITHUB_WORKSPACE/install-test"
+          n=$(ls -d "$GITHUB_WORKSPACE/install-test"/caveman-* | wc -l)
+          echo "установлено скиллов: $n"
+          [ "$n" -eq 17 ] || { echo "ожидалось 17, получено $n"; exit 1; }
+          ./install.sh status all --path "$GITHUB_WORKSPACE/install-test"
+          ./install.sh uninstall all --path "$GITHUB_WORKSPACE/install-test"
+
   gitleaks:
     runs-on: ubuntu-latest
     steps:

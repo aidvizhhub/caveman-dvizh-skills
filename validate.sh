@@ -43,6 +43,14 @@ for md in "$SKILLS_DIR"/*/SKILL.md; do
   grep -q '^  languages:' "$md" || echo "⚠️  $dir: нет languages в metadata"
   grep -q 'EN:' "$md" || echo "⚠️  $dir: нет EN-части в description"
 
+  # 4c. полный английский перевод тела (references/EN.md) + указатель в SKILL.md
+  if [ -f "$(dirname "$md")/references/EN.md" ]; then
+    : # перевод есть — хорошо
+  else
+    echo "⚠️  $dir: нет references/EN.md (EN-перевод тела)"
+  fi
+  grep -q 'references/EN.md' "$md" || echo "⚠️  $dir: нет указателя на references/EN.md"
+
   # 5. Следы машины
   for b in "${BANNED[@]}"; do
     if grep -q "$b" "$md"; then

@@ -15,11 +15,13 @@ license: MIT
   EN: Tribe loop: 8-step ritual (memory → research → bounds → plan → work with verify → prove → report → memory) until "done" is proven by facts. Use when told to act by canon, step-by-step.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-loop (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).
@@ -113,12 +115,3 @@ developersdigest/Atlan/IBM/betterclaw — Skills = «как делать», MCP 
 запутаюсь — закрой сам («может показаться, что …, но на деле …»), покажи
 ДО → ПОСЛЕ (размеры/скорость), коротко как в чате, без жаргона, в конце
 «так?». Мини-урок после дела. Скилл caveman-teach. Полный текст — канон.
-
----
-
-Relative paths in this skill (e.g., scripts/, reference/) are relative to this base directory.
-Note: file list is sampled.
-
-<skill_files>
-</skill_files>
-</content>

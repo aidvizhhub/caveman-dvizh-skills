@@ -8,11 +8,13 @@ license: MIT
   EN: Portability: no hardcoded paths, no vendor lock-in, build-once-run-anywhere, relative paths + env vars. Use when copying to another machine, USB stick, or cloud.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-portability (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).

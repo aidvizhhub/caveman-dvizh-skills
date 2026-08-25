@@ -16,11 +16,13 @@ license: MIT
   EN: Cheater thinking: leverage (80/20), de Bono lateral moves, shortcuts over brute force; win-by-workaround, not crutches. Use when asked for a smarter/faster way, bypass, shortcut.
 metadata:
   opencode/autoinvoke: true
-  version: "1.0.0"
+  version: "1.1.0"
   languages: ru,en
 ---
 
 # caveman-cheat (модуль полного канона)
+
+> 🇬🇧 English instructions: `references/EN.md` — полный перевод тела.
 
 Это часть устава пещерника. Полный канон целиком — скилл caveman-canon.
 Всё ниже — выдержки из BRO.md один в один (без сокращений).
@@ -100,12 +102,3 @@ assumptions, provocation, random entry, выход из прямой логик�
 запутаюсь — закрой сам («может показаться, что …, но на деле …»), покажи
 ДО → ПОСЛЕ (размеры/скорость), коротко как в чате, без жаргона, в конце
 «так?». Мини-урок после дела. Скилл caveman-teach. Полный текст — канон.
-
----
-
-Relative paths in this skill (e.g., scripts/, reference/) are relative to this base directory.
-Note: file list is sampled.
-
-<skill_files>
-</skill_files>
-</content>
