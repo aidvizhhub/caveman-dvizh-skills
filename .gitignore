@@ -1,0 +1,11 @@
+# временное и мусорное
+*.bak
+*.log
+.DS_Store
+__pycache__/
+.env
+
+# локальная установка, если кто-то поставил себе в репо
+.claude/skills/
+.opencode/skills/
+.agents/skills/
