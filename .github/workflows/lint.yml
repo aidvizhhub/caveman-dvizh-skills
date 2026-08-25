@@ -1,0 +1,21 @@
+# Страж скриптов: синтаксис + shellcheck (линтер для bash, как в индустрии).
+# Экшены не сторонние — ставим shellcheck на самом раннере (ubuntu).
+name: lint
+
+on:
+  push:
+    paths: ["*.sh", ".github/workflows/lint.yml"]
+  pull_request:
+    paths: ["*.sh", ".github/workflows/lint.yml"]
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Поставить shellcheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - name: Синтаксис всех скриптов
+        run: bash -n *.sh
+      - name: Shellcheck (главные ошибки валят CI)
+        run: shellcheck -e SC1091 -Werror -S warning *.sh

@@ -1,0 +1,11 @@
+# Зависимости репо — только GitHub Actions (скрипты без пакетов).
+# Dependabot следит за версиями экшенов в workflows.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
