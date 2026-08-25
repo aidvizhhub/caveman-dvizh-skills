@@ -12,11 +12,11 @@ description: >-
   Триггеры: обучи, объясни, научи, понятно, непонятно, запутал, почему так,
   связи, как это связано, что было до, что стало, расскажи проще,
   for dummies, объясни на пальцах.
-license: MIT
   EN: Teach at my level: WHY (1 line), explicit links, before/after states, anticipate confusion, end with "так?". Use when asked to explain simply, teach, clarify.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 

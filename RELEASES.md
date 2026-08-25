@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-08-25
+
+### Changed
+- страж RU/EN (паритет заголовков и код-блоков), README.en.md, bump.sh --release, npx-совместимость (YAML-фикс)
+
 Формат — [Keep a Changelog](https://keepachangelog.com/ru/1.0.0/), версии — [SemVer](https://semver.org/lang/ru/).
 (Индустрия чаще называет файл `CHANGELOG.md`; у нас имя `RELEASES.md` — как заказано.)
 

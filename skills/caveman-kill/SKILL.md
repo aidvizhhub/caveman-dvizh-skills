@@ -11,11 +11,11 @@ description: >-
   проверка «пусто ✅». Триггеры: pkill, pgrep, kill, убить процесс, не
   работает процесс, завис, два инстанса, перезапуск, сатоубийство, самострел,
   безопасная охота, процесс не убивается.
-license: MIT
   EN: Safe process hunting: never bare pkill -f (it matches itself), bracket trick, SIGTERM first, verify empty after. Use when killing, restarting, stuck processes.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 

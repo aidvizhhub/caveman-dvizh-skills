@@ -4,11 +4,11 @@ description: >-
   ПОРТАТИВНОСТЬ: без хардкод путей, без вендор-локина, build-once-run-anywhere.
   Относительные пути, env vars, self-contained пакет, vendor-agnostic форматы.
   Триггеры: portability, vendor-agnostic, no-hardcode, 12-factor, build-once, перенос, флешка, другой ПК.
-license: MIT
   EN: Portability: no hardcoded paths, no vendor lock-in, build-once-run-anywhere, relative paths + env vars. Use when copying to another machine, USB stick, or cloud.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 

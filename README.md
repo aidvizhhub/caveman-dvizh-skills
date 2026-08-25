@@ -3,8 +3,10 @@
 **17 agent skills: инженерная дисциплина, охота за фактами, безопасная работа и чистое мышление.**
 One skill set, any harness. Based on the open [Agent Skills](https://agentskills.io/specification) format.
 
+> 🇷🇺 Русская версия: этот файл · 🇬🇧 English: [README.en.md](README.en.md).
+
 [![Skills](https://img.shields.io/badge/skills-17-orange)](#каталог-скиллов)
-[![Version](https://img.shields.io/badge/version-1.1.0-blue)](#releases)
+[![Version](https://img.shields.io/badge/version-1.2.0-blue)](#releases)
 [![Languages](https://img.shields.io/badge/languages-RU+EN-yellow)](#каталог-скиллов)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-blue)](https://agentskills.io/specification)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -52,6 +54,13 @@ cd caveman-dvizh-skills
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/aidvizhhub/caveman-dvizh-skills/main/install.sh) --remote opencode
+```
+
+Или через CLI-менеджер скиллов `npx skills` (75+ харнесов, без клона):
+
+```bash
+npx skills add aidvizhhub/caveman-dvizh-skills --list   # показать 17 скиллов
+npx skills add aidvizhhub/caveman-dvizh-skills -g -a claude-code -y
 ```
 
 После установки просто скажи агенту «пользуйся скиллом caveman-loop» или опиши задачу словами из триггеров — скилл сам подхватится.
@@ -131,7 +140,7 @@ python3 -m venv ~/.venvs/camoufox-research
 
 ## Проверка и CI
 
-- `./validate.sh` — локальная проверка всех скиллов: frontmatter, имя=папка, длина description, EN-перевод, отсутствие трейсов конкретной машины.
+- `./validate.sh` — локальная проверка всех скиллов: строгий YAML frontmatter, имя=папка, длина description, EN-перевод, **паритет RU/EN** (заголовки и код-блоки должны совпадать 1:1), отсутствие трейсов конкретной машины.
 - `.github/workflows/ci.yml` — на каждый push: валидация → тест установки (чистый контейнер: 17 скиллов встают и убираются) → [gitleaks](https://github.com/gitleaks/gitleaks).
 
 ## Лицензия

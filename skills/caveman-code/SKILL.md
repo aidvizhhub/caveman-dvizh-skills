@@ -2,11 +2,11 @@
 name: caveman-code
 description: >-
   КОД КАК ИНДУСТРИЯ: сначала смотри, как пишут другие — примеры из официальных док, чужой качественный код, паттерны открытых проектов; пойми и адаптируй, и только нет готового — пиши сам. Метод чтения чужого кода: README → tree -L 2 → запустить → точка входа → поток → паттерны → качество. Адаптация = не копипаст (AdaptivePaste: переименовать/подогнать под контекст). Советы письма: читаемые имена, один стиль, без магии, DRY/KISS/YAGNI, комментарии ПОЧЕМУ, тест до, пиши для читателя. Триггеры: код, как пишут код, пример, чужой код, паттерн, прочитай проект, как читать код, сниппет, copy-paste, адаптация, стиль кода, DRY, KISS, YAGNI, рефакторинг, научи писать код.
-license: MIT
   EN: Code the industry way: study real examples and patterns first, then adapt; minimal clean code (KISS/DRY/YAGNI). Use when coding, refactoring, reviewing code patterns.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 

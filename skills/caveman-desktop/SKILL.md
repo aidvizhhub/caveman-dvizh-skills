@@ -2,11 +2,11 @@
 name: caveman-desktop
 description: >-
   МАШИНА И ВИДЕО: автозапуск любой программы при старте (systemd + linger, launchd, schtasks), OBS 120 FPS через INTEGER FPS, 144 FPS через FRACTION, запуск игр на Linux (3 пути), монтаж видео — ИИ = мозг + инструменты. Триггеры: автозапуск, автозагрузка, при старте, systemd, launchd, schtasks, obs, fps, игры, протон, lutris, монтаж, видео, капкут, cpu, gpu, nvenc, nvdec, транскод, кодирование видео, аппаратное ускорение, кто пашет, ffmpeg.
-license: MIT
   EN: Machine & video: autostart (systemd/launchd/schtasks), OBS FPS, Linux gaming (Wine/Proton/Lutris), video editing, NVENC/GPU. Use for autostart, OBS, ffmpeg, transcoding, games on Linux.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 

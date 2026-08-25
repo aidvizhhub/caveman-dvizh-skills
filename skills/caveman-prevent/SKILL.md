@@ -11,11 +11,11 @@ description: >-
   превентив, заранее, грабли, скрытый баг, предотврати, не допустить,
   премортем, fmea, риски, предусмотри, видны проблемы, чини до, быстрее
   можно, оптимизируй заранее, страж.
-license: MIT
   EN: Prevent: pre-mortem, FMEA, fix issues before they break, test early (shift-left), monitor. Use when asked about risks, foresight, avoiding bugs, what could go wrong.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 

@@ -9,11 +9,11 @@ description: >-
   повторилось (RCA, blameless). Триггеры: проверь, дотошно, мелочь, как есть,
   как должно, состояние, пути, связи, отмена, перезапуск, откат, повторить,
   постмортем, корень проблемы, 5 почему, рка, не повторил, баг вернулся.
-license: MIT
   EN: Verify everything: take actual state, compare with "should be", fix before next step, safe rollback, postmortem. Use when told to check, confirm, be thorough, prevent repeats.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 

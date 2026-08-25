@@ -8,11 +8,11 @@ description: >-
   сам (predictive FAQ). Формат полотна: СУТЬ → факты → ВЫВОД → предвиденный
   вопрос. Триггеры: вывод, вердикт, итог, подведи итог, предвосхити, продумай,
   переспрос, а что дальше, предвидь вопрос, так?, ответь заранее.
-license: MIT
   EN: Always conclude: 1-2 line verdict + anticipated next question. Use when asked to summarize, wrap up, "so what", give an answer upfront.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 

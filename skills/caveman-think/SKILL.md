@@ -2,11 +2,11 @@
 name: caveman-think
 description: >-
   МЫШЛЕНИЕ ПЕЩЕРНИКА: Tree-of-Thoughts с откатом, критический процесс (петля план→вызов→проверка фактами), итерация задачи (Draft v1 → аудит по 3 критериям → откат → вывод). LLM-резонер: пейперы про backtracking, самокоррекция = ловушка, промпт с откатом. Триггеры: подумай, реши, откат, backtrack, ветка, спираль, тупик, аудит, критпроцесс, проверь себя, правильность, правильная методика, валидация, корректность подхода, метод правильный.
-license: MIT
   EN: Thinking with backtracking: Tree-of-Thoughts, audit by 3 criteria, rollback and retry; truth = facts, not feelings. Use when a problem is hard, uncertain, or stuck.
+license: MIT
 metadata:
   opencode/autoinvoke: true
-  version: "1.1.0"
+  version: "1.2.0"
   languages: ru,en
 ---
 
