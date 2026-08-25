@@ -2,11 +2,11 @@
 # Экшены не сторонние — ставим shellcheck на самом раннере (ubuntu).
 name: lint
 
+# paths-фильтр убран: иначе проверка не запускается на PR с одними .md
+# и required check "shellcheck" вечно висит в ожидании — ветка запирается.
 on:
   push:
-    paths: ["*.sh", ".github/workflows/lint.yml"]
   pull_request:
-    paths: ["*.sh", ".github/workflows/lint.yml"]
 
 jobs:
   shellcheck:

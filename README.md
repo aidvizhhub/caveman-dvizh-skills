@@ -145,6 +145,15 @@ python3 -m venv ~/.venvs/camoufox-research
 - `SKILLS.yaml` — машиночитаемый индекс всех скиллов (name/version/path/description/languages) для CLI и маркетплейсов; пересобирается через `./update-index.sh` (и сам после `bump.sh`), расхождение ловит validate.sh.
 - `.github/workflows/ci.yml` — на каждый push: валидация → тест установки (чистый контейнер: 17 скиллов встают и убираются) → [gitleaks](https://github.com/gitleaks/gitleaks).
 
+## Вклад
+
+Камень растёт вместе с племенем. Правила простые:
+
+- **Правила вклада** — [CONTRIBUTING.md](CONTRIBUTING.md): один скилл = одно дело, триггеры в описании, RU+EN зеркало, тест до отправки.
+- **Кодекс поведения** — [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+- **Нашёл уязвимость?** — [SECURITY.md](SECURITY.md), по-тихому, через приватный отчёт.
+- Обращения и пул-реквесты — по шаблонам в `.github/` (заполняются сами).
+
 ## Лицензия
 
 [MIT](LICENSE) © 2026 aidvizhhub. Вольный камень — бери и встраивай.
