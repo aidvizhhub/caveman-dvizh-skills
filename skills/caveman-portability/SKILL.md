@@ -5,8 +5,11 @@ description: >-
   Относительные пути, env vars, self-contained пакет, vendor-agnostic форматы.
   Триггеры: portability, vendor-agnostic, no-hardcode, 12-factor, build-once, перенос, флешка, другой ПК.
 license: MIT
+  EN: Portability: no hardcoded paths, no vendor lock-in, build-once-run-anywhere, relative paths + env vars. Use when copying to another machine, USB stick, or cloud.
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-portability (модуль полного канона)

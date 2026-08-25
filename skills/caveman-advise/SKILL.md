@@ -11,8 +11,11 @@ description: >-
   куда дальше, креатив, идеи, улучши, что ещё, посоветуй, скрытое, риски,
   премортем, возможности, рекомендация.
 license: MIT
+  EN: Advisor: after any task — 3-4 next-step options with cost/benefit, then ONE firm recommendation (COR format). Use when asked for ideas, options, "what's next", recommendations.
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-advise (модуль полного канона)

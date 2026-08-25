@@ -3,8 +3,11 @@ name: caveman-run
 description: >-
   ЗАПУСК И ДОЛГИЕ ПРОЦЕССЫ: операционные законы (поллинг запрещён, фон + маркер _DONE.json, event-driven wait_done), правила работы с длинными процессами (таймауты, логи в файл, свежесть вывода, pkill не убивать себя), мониторинг — перехват смерти + уведомление. Триггеры: фоновый, поллинг, sleep, маркер, done.json, wait_done, завис, перехват смерти, сторож, таймаут.
 license: MIT
+  EN: Long processes: background + log file + done marker, no sleep-polling, catch death + notify. Use for background jobs, timeouts, watchdogs, waiting for completion.
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-run (модуль полного канона)

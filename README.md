@@ -4,6 +4,8 @@
 One skill set, any harness. Based on the open [Agent Skills](https://agentskills.io/specification) format.
 
 [![Skills](https://img.shields.io/badge/skills-17-orange)](#каталог-скиллов)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](#releases)
+[![Languages](https://img.shields.io/badge/languages-RU+EN-yellow)](#каталог-скиллов)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-blue)](https://agentskills.io/specification)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![CI](https://github.com/aidvizhhub/caveman-dvizh-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/aidvizhhub/caveman-dvizh-skills/actions/workflows/ci.yml)
@@ -24,7 +26,7 @@ One skill set, any harness. Based on the open [Agent Skills](https://agentskills
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | `~/.gemini/skills/` | ✅ |
 | GitHub Copilot / любой агент | `~/.agents/skills/` | ✅ |
 
-> Скиллы — на русском: триггеры и тело на русском, поэтому включаются русскими словами («бро», «ресёрч», «не работает»). Полный канон одного племени — в [caveman-canon](https://github.com/aidvizhhub) (в этот набор не входит).
+> Скиллы — двуязычные: `description` на русском + строка `EN: ...` (в metadata `languages: ru,en`), поэтому включаются и русскими словами («бро», «ресёрч», «не работает»), и английскими. Каждый скилл помечен `version: "1.0.0"`, история — в [RELEASES.md](RELEASES.md).
 
 ---
 
@@ -53,6 +55,24 @@ bash <(curl -fsSL https://raw.githubusercontent.com/aidvizhhub/caveman-dvizh-ski
 ```
 
 После установки просто скажи агенту «пользуйся скиллом caveman-loop» или опиши задачу словами из триггеров — скилл сам подхватится.
+
+---
+
+## Совместимость: тул кауфми (camoufox-research)
+
+Скиллы **caveman-research** и **caveman-diagnose** обращаются к «кауфми» — нашему MCP-серверу разведки [camoufox-research](https://github.com/aidvizhhub/camoufox-research) (48 тулов: веб-поиск, чтение страниц, батчи, скриншоты). Это внешний тул, в набор скиллов он НЕ входит. Без него агент честно скажет «кауфми лёг» — это значит «нет подключённого инструмента», а не беда:
+
+```bash
+# Установка кауфми (один раз, нужен python3)
+git clone https://github.com/aidvizhhub/camoufox-research.git && cd camoufox-research
+python3 -m venv ~/.venvs/camoufox-research
+~/.venvs/camoufox-research/bin/pip install .
+~/.venvs/camoufox-research/bin/python -m camoufox fetch   # скачать браузер (один раз)
+
+# Проверка подключения: opencode mcp list → camoufox: connected
+```
+
+Остальные 15 скиллов работают без кауфми — им нужен только шелл.
 
 ---
 
@@ -100,6 +120,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/aidvizhhub/caveman-dvizh-ski
 5. Полный стандарт: [agentskills.io/specification](https://agentskills.io/specification).
 
 ---
+
+## Релизы
+
+История версий — в [RELEASES.md](RELEASES.md) (формат Keep a Changelog, версии SemVer). Версия каждого скилла — в его metadata (`version`).
 
 ## Проверка и CI
 

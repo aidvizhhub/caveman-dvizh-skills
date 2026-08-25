@@ -13,8 +13,11 @@ description: >-
   ловкий путь, обход, рычаг, умнее, быстрее можно, не в лоб, 80/20,
   шорткат, схитрить, грамотный ход.
 license: MIT
+  EN: Cheater thinking: leverage (80/20), de Bono lateral moves, shortcuts over brute force; win-by-workaround, not crutches. Use when asked for a smarter/faster way, bypass, shortcut.
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-cheat (модуль полного канона)

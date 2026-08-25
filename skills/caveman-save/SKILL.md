@@ -3,8 +3,11 @@ name: caveman-save
 description: >-
   ЭКОНОМИЯ И ФОРМА: батч всё, один вызов = одно дело, скрипты в /tmp вместо цепочек, сжимай вывод (tail/grep/head), дедуп, скрипт лучше правила. Файлы 100-300 строк (max 500), функция 10-25 строк. ОДИН ИНСТАНС = одно племя (бить всю семью процессов). ТЕСТ ДО ДОБАВЛЕНИЯ: сначала докажи — потом пиши. Триггеры: экономия, батч, токены, сжать, скрипт, дубликат, два инстанса, тест, файлы, строки, дедуп, шаги до результата, эффективность, рамки успеха, критерии успеха, готово =.
 license: MIT
+  EN: Economy & form: batch everything, dedupe, temp scripts in one file, files 100-300 lines, one instance per tribe. Use when asked to save calls/tokens, compress output, streamline.
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-save (модуль полного канона)

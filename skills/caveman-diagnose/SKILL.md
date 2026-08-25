@@ -3,8 +3,11 @@ name: caveman-diagnose
 description: >-
   ЧИНИМ БЕЗ ГАДАНИЯ: локальные улики (логи/dmesg/состояние) → веб по уликам → сопоставил → лечи, одна переменная за раз. Фиксы: MCP Unknown tool (codemode false), camoufox Connection closed (убить процесс → disconnect → connect), Firefox плеер не работает, WirePlumber 0.5 убил Lua. Триггеры: не работает, зависло, сломалось, логи, dmesg, улики, unknown tool, connection closed, mcp, кауфми лёг, диагноз, почему, версии, совместимость, gpu-задача на cpu, nvidia-smi.
 license: MIT
+  EN: Fix without guessing: local clues (logs/dmesg/state) → web by clues → treat, one variable at a time. Use when something is broken, hangs, or fails.
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-diagnose (модуль полного канона)

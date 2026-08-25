@@ -12,8 +12,11 @@ description: >-
   ритуал, шаг за шагом, по скиллам, по порядку, пока не выполнится,
   действуй полностью, весь цикл, сделай по-канону.
 license: MIT
+  EN: Tribe loop: 8-step ritual (memory → research → bounds → plan → work with verify → prove → report → memory) until "done" is proven by facts. Use when told to act by canon, step-by-step.
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-loop (модуль полного канона)

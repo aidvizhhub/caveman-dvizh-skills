@@ -38,6 +38,11 @@ for md in "$SKILLS_DIR"/*/SKILL.md; do
   # 4. license в frontmatter (опционально, но рекомендуем)
   grep -q "^license:" "$md" || echo "⚠️  $dir: нет license в frontmatter"
 
+  # 4b. версия, языки, двуязычное описание
+  grep -q '^  version:' "$md" || echo "⚠️  $dir: нет version в metadata"
+  grep -q '^  languages:' "$md" || echo "⚠️  $dir: нет languages в metadata"
+  grep -q 'EN:' "$md" || echo "⚠️  $dir: нет EN-части в description"
+
   # 5. Следы машины
   for b in "${BANNED[@]}"; do
     if grep -q "$b" "$md"; then

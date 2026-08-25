@@ -3,8 +3,11 @@ name: caveman-research
 description: >-
   РЕСЁРЧ ПЕЩЕРНИКА: кауфми первым, 10+ источников (mandatory), fallback websearch+webfetch, «кауфми лёг», КАУФМИ=БОГ ОГНЯ (проверка pong), как заставить кауфми не лениться, подглядывай у индустрии, ресёрч по всему пути кода, ответ градацией 🟢🟡🔴 (интеграции = 70% провалов), облачные знания. Триггеры: кауфми, ресёрч, копать, еби поиск, 20 источников, чекни, узнай, посмотри, с интернета, проанализируй, чекни кауфми, неоднозначность, спорный вопрос, мнение аналитиков, уже решено, решённая грабля, переизобретение, решение существует.
 license: MIT
+  EN: Research: 10+ sources first (mandatory), official docs before blogs, verify facts, grade 🟢🟡🔴. Use when fact-checking, ambiguous questions, "how does industry do it".
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-research (модуль полного канона)

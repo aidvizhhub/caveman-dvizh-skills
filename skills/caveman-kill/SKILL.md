@@ -12,8 +12,11 @@ description: >-
   работает процесс, завис, два инстанса, перезапуск, сатоубийство, самострел,
   безопасная охота, процесс не убивается.
 license: MIT
+  EN: Safe process hunting: never bare pkill -f (it matches itself), bracket trick, SIGTERM first, verify empty after. Use when killing, restarting, stuck processes.
 metadata:
   opencode/autoinvoke: true
+  version: "1.0.0"
+  languages: ru,en
 ---
 
 # caveman-kill (модуль полного канона)
