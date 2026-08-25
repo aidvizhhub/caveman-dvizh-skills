@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+### Changed
+- Бейдж skills.sh (счётчик установок) добавлен в README (RU/EN).
+
 ## [1.3.0] - 2026-08-25
 
 ### Changed
