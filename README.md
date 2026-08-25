@@ -10,6 +10,7 @@ One skill set, any harness. Based on the open [Agent Skills](https://agentskills
 [![Languages](https://img.shields.io/badge/languages-RU+EN-yellow)](#каталог-скиллов)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-blue)](https://agentskills.io/specification)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![skills.sh](https://skills.sh/b/aidvizhhub/caveman-dvizh-skills)](https://skills.sh/b/aidvizhhub/caveman-dvizh-skills)
 [![CI](https://github.com/aidvizhhub/caveman-dvizh-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/aidvizhhub/caveman-dvizh-skills/actions/workflows/ci.yml)
 
 ---
