@@ -18,4 +18,4 @@ jobs:
       - name: Синтаксис всех скриптов
         run: bash -n *.sh
       - name: Shellcheck (главные ошибки валят CI)
-        run: shellcheck -e SC1091 -Werror -S warning *.sh
+        run: shellcheck --severity=warning -e SC1091 *.sh
