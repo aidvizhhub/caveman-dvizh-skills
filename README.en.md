@@ -140,6 +140,7 @@ History: [RELEASES.md](RELEASES.md) (Keep a Changelog format, SemVer). Each skil
 ## Validation & CI
 
 - `./validate.sh` — checks all skills: strict YAML, name=folder, description ≤1024, EN translation present, **RU/EN parity** (headings and code blocks must match 1:1), `SKILLS.yaml` index vs frontmatter, no machine traces.
+- `tests/golden_triggers.py` — **golden trigger tests** (called from validate.sh): every skill has a non-empty trigger list, every trigger exists in the skill text, no duplicates; ambiguities ("one trigger for two skills") and false activations are warnings.
 - `SKILLS.yaml` — machine-readable index of all skills (name/version/path/description/languages) for CLIs and marketplaces; rebuilt via `./update-index.sh` (also auto after `bump.sh`); validate.sh catches drift.
 - `.github/workflows/ci.yml` — on every push: validate → install test (clean container: 17 skills install and uninstall) → [gitleaks](https://github.com/gitleaks/gitleaks).
 

@@ -114,6 +114,12 @@ sys.exit(1 if any(i.startswith("❌") for i in issues) else 0)
 PY
 [ $? -ne 0 ] && FAIL=1
 
+# Золотые тесты триггеров: описания зовут скиллы правильно (A-гейт: структура
+# триггеров, мёртвые слова, дубли; WARN: двусмысленности и ложные вызовы)
+if ! python3 "$ROOT/tests/golden_triggers.py"; then
+  echo "❌ золотые тесты триггеров: FAIL"; FAIL=1
+fi
+
 n="$(ls -d "$SKILLS_DIR"/*/ | wc -l)"
 if [ "$FAIL" -eq 0 ]; then
   echo "✅ PASS: $n скиллов валидны ($(cat "$SKILLS_DIR"/*/SKILL.md | wc -l) строк RU + $(cat "$SKILLS_DIR"/*/references/EN.md | wc -l) строк EN)"
