@@ -6,7 +6,7 @@ One skill set, any harness. Based on the open [Agent Skills](https://agentskills
 > 🇷🇺 Русская версия: этот файл · 🇬🇧 English: [README.en.md](README.en.md).
 
 [![Skills](https://img.shields.io/badge/skills-17-orange)](#каталог-скиллов)
-[![Version](https://img.shields.io/badge/version-1.2.0-blue)](#releases)
+[![Version](https://img.shields.io/badge/version-1.3.0-blue)](#releases)
 [![Languages](https://img.shields.io/badge/languages-RU+EN-yellow)](#каталог-скиллов)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-blue)](https://agentskills.io/specification)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -140,7 +140,8 @@ python3 -m venv ~/.venvs/camoufox-research
 
 ## Проверка и CI
 
-- `./validate.sh` — локальная проверка всех скиллов: строгий YAML frontmatter, имя=папка, длина description, EN-перевод, **паритет RU/EN** (заголовки и код-блоки должны совпадать 1:1), отсутствие трейсов конкретной машины.
+- `./validate.sh` — локальная проверка всех скиллов: строгий YAML frontmatter, имя=папка, длина description, EN-перевод, **паритет RU/EN** (заголовки и код-блоки должны совпадать 1:1), сверка индекса **SKILLS.yaml** с frontmatter, отсутствие трейсов конкретной машины.
+- `SKILLS.yaml` — машиночитаемый индекс всех скиллов (name/version/path/description/languages) для CLI и маркетплейсов; пересобирается через `./update-index.sh` (и сам после `bump.sh`), расхождение ловит validate.sh.
 - `.github/workflows/ci.yml` — на каждый push: валидация → тест установки (чистый контейнер: 17 скиллов встают и убираются) → [gitleaks](https://github.com/gitleaks/gitleaks).
 
 ## Лицензия

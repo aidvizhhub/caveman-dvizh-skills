@@ -78,6 +78,9 @@ for md in "$SKILLS"/*/SKILL.md; do
 done
 echo "✅ version $NEW в $(ls -d "$SKILLS"/*/ | wc -l) скиллах"
 
+# 1b. Пересобрать индекс SKILLS.yaml (версии менялись)
+"$ROOT/update-index.sh"
+
 # 2. RELEASES.md: Unreleased → новый релиз, сверху свежий Unreleased
 [ -f "$RELEASES" ] || { echo "❌ нет RELEASES.md"; exit 1; }
 NOTE_SAFE="${NOTE//|/\\|}"

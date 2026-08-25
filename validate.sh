@@ -36,11 +36,11 @@ for md in "$SKILLS_DIR"/*/SKILL.md; do
 done
 
 # 4. Строгий YAML + паритет RU/EN (одним python-заходом)
-python3 - "$SKILLS_DIR" <<'PY'
+python3 - "$ROOT" "$SKILLS_DIR" <<'PY'
 import re, sys, pathlib, yaml
 root = pathlib.Path(sys.argv[1])
+skills = sorted(pathlib.Path(sys.argv[2]).glob("*/SKILL.md"))
 issues = []
-skills = sorted(root.glob("*/SKILL.md"))
 for f in skills:
     d = f.parent.name
     raw = f.read_text(encoding="utf-8")
@@ -80,11 +80,35 @@ for f in skills:
     if c_ru != c_en:
         issues.append(f"❌ {d}: код-блоки RU {c_ru} ≠ EN {c_en}")
 
+# 5. SKILLS.yaml — индекс должен совпадать с frontmatter (источник истины)
+idx_path = root / "SKILLS.yaml"
+if idx_path.exists():
+    idx = yaml.safe_load(idx_path.read_text(encoding="utf-8"))
+    idx_skills = {s["name"]: s for s in idx.get("skills", [])}
+    real_names = {f.parent.name for f in skills}
+    if set(idx_skills) != real_names:
+        issues.append(f"❌ SKILLS.yaml: набор скиллов разошёлся (индекс {sorted(set(idx_skills))[:3]}..., факт {sorted(real_names)[:3]}...)")
+    for f in skills:
+        d = f.parent.name
+        meta = yaml.safe_load(f.read_text(encoding="utf-8").split("---", 2)[1])
+        s = idx_skills.get(d)
+        if not s:
+            continue
+        ver = (meta.get("metadata") or {}).get("version", "")
+        if s.get("version") != ver:
+            issues.append(f"❌ SKILLS.yaml: {d} version {s.get('version')} ≠ {ver}")
+        if s.get("path") != f"skills/{d}":
+            issues.append(f"❌ SKILLS.yaml: {d} path {s.get('path')} ≠ skills/{d}")
+        if s.get("description") != meta.get("description"):
+            issues.append(f"❌ SKILLS.yaml: {d} description разошёлся с SKILL.md")
+else:
+    issues.append("⚠️  нет SKILLS.yaml (индекс) — запусти ./update-index.sh")
+
 for i in issues:
     print(i)
 n = len(skills)
 if not issues:
-    print(f"✅ YAML+паритет: {n}/{n} скиллов идеальны")
+    print(f"✅ YAML+паритет+индекс: {n}/{n} скиллов идеальны")
     sys.exit(0)
 sys.exit(1 if any(i.startswith("❌") for i in issues) else 0)
 PY

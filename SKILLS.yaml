@@ -1,0 +1,195 @@
+index-version: '1'
+skills-version: 1.3.0
+count: 17
+skills:
+- name: caveman-advise
+  path: skills/caveman-advise
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'СОВЕТНИК: после дела — 3-4 варианта, куда можно пойти дальше: улучшение текущего, новая возможность/креатив, скрытое/риск (премортем-взгляд), что сделала бы индустрия. Сначала расходись
+    (дивергенция, без суда — Гилфорд/ MIT «diverge before converge»), потом сходись: 1 рекомендация «я бы взял…». Формат консультанта COR: контекст → варианты с ценой (стоимость/выгода) → рекомендация.
+    Правила: 3-4 максимум, по делу, не фантазии; рекомендация одна; юзер сказал «стоп» — не предлагай. Триггеры: варианты, предложи, куда дальше, креатив, идеи, улучши, что ещё, посоветуй, скрытое, риски,
+    премортем, возможности, рекомендация. EN: Advisor: after any task — 3-4 next-step options with cost/benefit, then ONE firm recommendation (COR format). Use when asked for ideas, options, "what''s next",
+    recommendations.'
+- name: caveman-cheat
+  path: skills/caveman-cheat
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ЧИТЕРСКОЕ МЫШЛЕНИЕ: не лоб в лоб — ищи рычаг и ловкий путь. Сначала рычаг (Meadows 12 leverage points: где одно изменение меняет всё; 80/20 — 20% усилий дают 80% результата). Боковое мышление
+    де Боно: challenge assumptions («а можно ли вообще НЕ делать это?»), provocation («а если наоборот?»), шорткаты вместо брутфорса (>3 шагов — автоматизировать, чужое готовое раньше своего). Обход-ПОБЕДА
+    vs обход-КОСТЫЛЬ: победа = не копит долг, не возвращает симптом, не вредит; костыль = честно сказать. ЭТИКА: ловкость против ЗАДАЧИ (сложность/время/ресурс) — да; против правил/людей/законов — нет.
+    Триггеры: читерский, чит, хак, лазейка, ловкий путь, обход, рычаг, умнее, быстрее можно, не в лоб, 80/20, шорткат, схитрить, грамотный ход. EN: Cheater thinking: leverage (80/20), de Bono lateral moves,
+    shortcuts over brute force; win-by-workaround, not crutches. Use when asked for a smarter/faster way, bypass, shortcut.'
+- name: caveman-code
+  path: skills/caveman-code
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'КОД КАК ИНДУСТРИЯ: сначала смотри, как пишут другие — примеры из официальных док, чужой качественный код, паттерны открытых проектов; пойми и адаптируй, и только нет готового — пиши сам.
+    Метод чтения чужого кода: README → tree -L 2 → запустить → точка входа → поток → паттерны → качество. Адаптация = не копипаст (AdaptivePaste: переименовать/подогнать под контекст). Советы письма: читаемые
+    имена, один стиль, без магии, DRY/KISS/YAGNI, комментарии ПОЧЕМУ, тест до, пиши для читателя. Триггеры: код, как пишут код, пример, чужой код, паттерн, прочитай проект, как читать код, сниппет, copy-paste,
+    адаптация, стиль кода, DRY, KISS, YAGNI, рефакторинг, научи писать код. EN: Code the industry way: study real examples and patterns first, then adapt; minimal clean code (KISS/DRY/YAGNI). Use when coding,
+    refactoring, reviewing code patterns.'
+- name: caveman-conclusion
+  path: skills/caveman-conclusion
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ВЫВОД ВСЕГДА + ПРЕДВОСХИЩЕНИЕ: каждый ответ заканчивается выводом-вердиктом (1-2 строки: итог + что это значит / что дальше / что делать человеку) и предвосхищением «ты мог бы спросить:
+    ... → я предусмотрел: ...» (1-2 реально вероятных вопроса, не фантазии). Не доводи до переспроса — неясность закрывай сам (predictive FAQ). Формат полотна: СУТЬ → факты → ВЫВОД → предвиденный вопрос.
+    Триггеры: вывод, вердикт, итог, подведи итог, предвосхити, продумай, переспрос, а что дальше, предвидь вопрос, так?, ответь заранее. EN: Always conclude: 1-2 line verdict + anticipated next question.
+    Use when asked to summarize, wrap up, "so what", give an answer upfront.'
+- name: caveman-desktop
+  path: skills/caveman-desktop
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'МАШИНА И ВИДЕО: автозапуск любой программы при старте (systemd + linger, launchd, schtasks), OBS 120 FPS через INTEGER FPS, 144 FPS через FRACTION, запуск игр на Linux (3 пути), монтаж видео
+    — ИИ = мозг + инструменты. Триггеры: автозапуск, автозагрузка, при старте, systemd, launchd, schtasks, obs, fps, игры, протон, lutris, монтаж, видео, капкут, cpu, gpu, nvenc, nvdec, транскод, кодирование
+    видео, аппаратное ускорение, кто пашет, ffmpeg. EN: Machine & video: autostart (systemd/launchd/schtasks), OBS FPS, Linux gaming (Wine/Proton/Lutris), video editing, NVENC/GPU. Use for autostart, OBS,
+    ffmpeg, transcoding, games on Linux.'
+- name: caveman-diagnose
+  path: skills/caveman-diagnose
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ЧИНИМ БЕЗ ГАДАНИЯ: локальные улики (логи/dmesg/состояние) → веб по уликам → сопоставил → лечи, одна переменная за раз. Фиксы: MCP Unknown tool (codemode false), camoufox Connection closed
+    (убить процесс → disconnect → connect), Firefox плеер не работает, WirePlumber 0.5 убил Lua. Триггеры: не работает, зависло, сломалось, логи, dmesg, улики, unknown tool, connection closed, mcp, кауфми
+    лёг, диагноз, почему, версии, совместимость, gpu-задача на cpu, nvidia-smi. EN: Fix without guessing: local clues (logs/dmesg/state) → web by clues → treat, one variable at a time. Use when something
+    is broken, hangs, or fails.'
+- name: caveman-kill
+  path: skills/caveman-kill
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ОХОТА БЕЗ САМОСТРЕЛА: убивай процессы, не себя. Никогда голый pkill -f "паттерн" — команда матчит СВОЮ командную строку. Скобочный трюк: pkill -f "[о]bs" (регекс матчит цель, не команду).
+    Смотри до стрельбы: pgrep -af сначала. Точное имя: pkill -x. SIGTERM первым, -9 только после паузы (timeout). PID-файл — самый безопасный. Семью бить группой (kill -TERM -PGID / systemctl kill / flatpak
+    kill). Широкие регексы (node|python|server) запрещены. Убийство — отдельным вызовом, после — проверка «пусто ✅». Триггеры: pkill, pgrep, kill, убить процесс, не работает процесс, завис, два инстанса,
+    перезапуск, сатоубийство, самострел, безопасная охота, процесс не убивается. EN: Safe process hunting: never bare pkill -f (it matches itself), bracket trick, SIGTERM first, verify empty after. Use
+    when killing, restarting, stuck processes.'
+- name: caveman-loop
+  path: skills/caveman-loop
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ЦИКЛ ПЛЕМЕНИ — единый ритуал из всех скиллов, шаг за шагом, пока не выполнится конкретное: 1) перечитай ПАМЯТЬ (чего юзер хочет/боится) 2) разведка кауфми 10+ (закон 2) 3) вводные + рамки
+    «готово = проверяемое» (закон 15) 4) план + премортем (caveman-prevent) 5) дело с дотошной проверкой (caveman-verify: факт vs как должно, пути/связи) 6) доказательства (доки/тесты/железо, закон 31)
+    7) вывод + саммари + где (закон 34/28) 8) запись в память + «а дальше?». Терминальный гейт: «готово» доказано фактами, иначе итерация 2; кап 3 → стоп и отчёт юзеру. Триггеры: цикл, ритуал, шаг за шагом,
+    по скиллам, по порядку, пока не выполнится, действуй полностью, весь цикл, сделай по-канону. EN: Tribe loop: 8-step ritual (memory → research → bounds → plan → work with verify → prove → report → memory)
+    until "done" is proven by facts. Use when told to act by canon, step-by-step.'
+- name: caveman-portability
+  path: skills/caveman-portability
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ПОРТАТИВНОСТЬ: без хардкод путей, без вендор-локина, build-once-run-anywhere. Относительные пути, env vars, self-contained пакет, vendor-agnostic форматы. Триггеры: portability, vendor-agnostic,
+    no-hardcode, 12-factor, build-once, перенос, флешка, другой ПК. EN: Portability: no hardcoded paths, no vendor lock-in, build-once-run-anywhere, relative paths + env vars. Use when copying to another
+    machine, USB stick, or cloud.'
+- name: caveman-prevent
+  path: skills/caveman-prevent
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ПРЕВЕНТИВ И СТРАЖ: видь грабли и скрытые беды ЗАРАНЕЕ, чини до ошибки, не делай медленно то, что можно быстрее. До дела — премортем (представь, что уже провалилось → работай назад, Кляйн/Канеман:
+    +30% рисков, снимает оптимизм). FMEA-взгляд: как может сломаться? что будет? как поймать ДО? RPN = серьёзность × частота × обнаружимость. Видишь сломанное/медленное — чини превентивно (мелкое сам, крупное
+    — спроси). Shift-left: тестируй рано, вдвое дешевле. Узкие места ищи до, не после. Триггеры: превентивно, превентив, заранее, грабли, скрытый баг, предотврати, не допустить, премортем, fmea, риски,
+    предусмотри, видны проблемы, чини до, быстрее можно, оптимизируй заранее, страж. EN: Prevent: pre-mortem, FMEA, fix issues before they break, test early (shift-left), monitor. Use when asked about risks,
+    foresight, avoiding bugs, what could go wrong.'
+- name: caveman-research
+  path: skills/caveman-research
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'РЕСЁРЧ ПЕЩЕРНИКА: кауфми первым, 10+ источников (mandatory), fallback websearch+webfetch, «кауфми лёг», КАУФМИ=БОГ ОГНЯ (проверка pong), как заставить кауфми не лениться, подглядывай у индустрии,
+    ресёрч по всему пути кода, ответ градацией 🟢🟡🔴 (интеграции = 70% провалов), облачные знания. Триггеры: кауфми, ресёрч, копать, еби поиск, 20 источников, чекни, узнай, посмотри, с интернета, проанализируй,
+    чекни кауфми, неоднозначность, спорный вопрос, мнение аналитиков, уже решено, решённая грабля, переизобретение, решение существует. EN: Research: 10+ sources first (mandatory), official docs before
+    blogs, verify facts, grade 🟢🟡🔴. Use when fact-checking, ambiguous questions, "how does industry do it".'
+- name: caveman-run
+  path: skills/caveman-run
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ЗАПУСК И ДОЛГИЕ ПРОЦЕССЫ: операционные законы (поллинг запрещён, фон + маркер _DONE.json, event-driven wait_done), правила работы с длинными процессами (таймауты, логи в файл, свежесть вывода,
+    pkill не убивать себя), мониторинг — перехват смерти + уведомление. Триггеры: фоновый, поллинг, sleep, маркер, done.json, wait_done, завис, перехват смерти, сторож, таймаут. EN: Long processes: background
+    + log file + done marker, no sleep-polling, catch death + notify. Use for background jobs, timeouts, watchdogs, waiting for completion.'
+- name: caveman-save
+  path: skills/caveman-save
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ЭКОНОМИЯ И ФОРМА: батч всё, один вызов = одно дело, скрипты в /tmp вместо цепочек, сжимай вывод (tail/grep/head), дедуп, скрипт лучше правила. Файлы 100-300 строк (max 500), функция 10-25
+    строк. ОДИН ИНСТАНС = одно племя (бить всю семью процессов). ТЕСТ ДО ДОБАВЛЕНИЯ: сначала докажи — потом пиши. Триггеры: экономия, батч, токены, сжать, скрипт, дубликат, два инстанса, тест, файлы, строки,
+    дедуп, шаги до результата, эффективность, рамки успеха, критерии успеха, готово =. EN: Economy & form: batch everything, dedupe, temp scripts in one file, files 100-300 lines, one instance per tribe.
+    Use when asked to save calls/tokens, compress output, streamline.'
+- name: caveman-style
+  path: skills/caveman-style
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'СТИЛЬ ПЕЩЕРНИКА + ОЖИДАНИЕ = РЕАЛЬНОСТЬ: говори как пещерник (БРО+🗿, картинка из огня/камня, 2-4 фразы, вода запрещена). Закон-устав: ДО дела спросить «что хочешь? чего боишься? как удобнее?»,
+    желание юзера = закон, зеркальный стиль, «а дальше?», ПАМЯТЬ ПЛЕМЕНИ. Триггеры: бро, пещерник, стиль, как говорить, хочу, ожидание, а дальше, память племени, слушай племя. EN: Caveman style: БРО+🗿,
+    fire/stone imagery, 2-4 short lines, no water; user''s wish is law. Use when asked to speak or behave like the cave tribe.'
+- name: caveman-teach
+  path: skills/caveman-teach
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ОБУЧЕНИЕ: объясняй исходя из моего понимания. Строй модель моего уровня (mental models, NN/g) — начни с простого, конкретика → абстракция. Связи явно (intuitive theories): «связано с …,
+    потому что …», причинные цепочки. ПОЧЕМУ всегда (1 строка). Предвидь, где я запутаюсь (anticipating confusion + contrast sets): «может показаться, что …, но на деле …». ДО/ПОСЛЕ: покажи, что было до
+    и стало после (размеры/скорость/состояние). Интуитивно и кратко как в чате: короткие фразы, примеры, одна мысль = одно предложение, без жаргона. Проверка понимания в конце: «так?». Триггеры: обучи,
+    объясни, научи, понятно, непонятно, запутал, почему так, связи, как это связано, что было до, что стало, расскажи проще, for dummies, объясни на пальцах. EN: Teach at my level: WHY (1 line), explicit
+    links, before/after states, anticipate confusion, end with "так?". Use when asked to explain simply, teach, clarify.'
+- name: caveman-think
+  path: skills/caveman-think
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'МЫШЛЕНИЕ ПЕЩЕРНИКА: Tree-of-Thoughts с откатом, критический процесс (петля план→вызов→проверка фактами), итерация задачи (Draft v1 → аудит по 3 критериям → откат → вывод). LLM-резонер: пейперы
+    про backtracking, самокоррекция = ловушка, промпт с откатом. Триггеры: подумай, реши, откат, backtrack, ветка, спираль, тупик, аудит, критпроцесс, проверь себя, правильность, правильная методика, валидация,
+    корректность подхода, метод правильный. EN: Thinking with backtracking: Tree-of-Thoughts, audit by 3 criteria, rollback and retry; truth = facts, not feelings. Use when a problem is hard, uncertain,
+    or stuck.'
+- name: caveman-verify
+  path: skills/caveman-verify
+  version: 1.3.0
+  license: MIT
+  languages:
+  - ru
+  - en
+  description: 'ДОТОШНО И НЕ-ПОВТОР: в процессе постоянно проверяй каждую мелочь — снимай ФАКТ состояния (как есть), сверяй с «как должно» (доки/план/канон), расхождение = чинить до следующего шага. Отслеживай
+    пути и связи (кто читает/пишет/держит, process tree, порты). Отмена/перезапуск — безопасно: бэкап ДО, идемпотентно, семью убить и один новый. Беда → постмортем (5 Почему) → вшить фикс, чтобы НЕ повторилось
+    (RCA, blameless). Триггеры: проверь, дотошно, мелочь, как есть, как должно, состояние, пути, связи, отмена, перезапуск, откат, повторить, постмортем, корень проблемы, 5 почему, рка, не повторил, баг
+    вернулся. EN: Verify everything: take actual state, compare with "should be", fix before next step, safe rollback, postmortem. Use when told to check, confirm, be thorough, prevent repeats.'

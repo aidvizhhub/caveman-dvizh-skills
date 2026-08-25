@@ -6,7 +6,7 @@ One skill set, any harness. Based on the open [Agent Skills](https://agentskills
 > 🇷🇺 Русская версия: [README.ru.md](README.md) · 🇬🇧 English: this file.
 
 [![Skills](https://img.shields.io/badge/skills-17-orange)](#skill-catalog)
-[![Version](https://img.shields.io/badge/version-1.2.0-blue)](#releases)
+[![Version](https://img.shields.io/badge/version-1.3.0-blue)](#releases)
 [![Languages](https://img.shields.io/badge/languages-RU+EN-yellow)](#skill-catalog)
 [![Format](https://img.shields.io/badge/format-Agent%20Skills-blue)](https://agentskills.io/specification)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -138,7 +138,8 @@ History: [RELEASES.md](RELEASES.md) (Keep a Changelog format, SemVer). Each skil
 
 ## Validation & CI
 
-- `./validate.sh` — checks all skills: strict YAML, name=folder, description ≤1024, EN translation present, **RU/EN parity** (headings and code blocks must match 1:1), no machine traces.
+- `./validate.sh` — checks all skills: strict YAML, name=folder, description ≤1024, EN translation present, **RU/EN parity** (headings and code blocks must match 1:1), `SKILLS.yaml` index vs frontmatter, no machine traces.
+- `SKILLS.yaml` — machine-readable index of all skills (name/version/path/description/languages) for CLIs and marketplaces; rebuilt via `./update-index.sh` (also auto after `bump.sh`); validate.sh catches drift.
 - `.github/workflows/ci.yml` — on every push: validate → install test (clean container: 17 skills install and uninstall) → [gitleaks](https://github.com/gitleaks/gitleaks).
 
 ## License
